@@ -1,0 +1,20 @@
+query SearchRestaurants($latitude: Float,$longitude: Float, $radius: Float, $category: String, $term: String){
+    search(latitude: $latitude,longitude: $longitude, radius: $radius, categories: $category, term: $term){
+        total
+        business{
+            id
+            name
+            location{
+                address1
+                formatted_address
+            }
+            phone
+            display_phone
+            price
+            coordinates{
+                latitude
+                longitude
+            }
+        }
+    }
+}

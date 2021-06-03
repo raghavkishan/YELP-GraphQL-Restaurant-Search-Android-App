@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/restaurantListFragment">
+
+    <fragment
+        android:id="@+id/restaurantListFragment"
+        android:name="com.example.yelpapirestaurantsearch.ui.RestaurantListFragment"
+        android:label="fragment_restaurant_list"
+        tools:layout="@layout/fragment_restaurant_list" >
+        <action
+            android:id="@+id/action_restaurantListFragment_to_restaurantDetailsFragment"
+            app:destination="@id/restaurantDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurantDetailsFragment"
+        android:name="com.example.yelpapirestaurantsearch.ui.RestaurantDetailsFragment"
+        android:label="restaurant_details_fragment"
+        tools:layout="@layout/restaurant_details_fragment">
+        <argument
+            android:name="address"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

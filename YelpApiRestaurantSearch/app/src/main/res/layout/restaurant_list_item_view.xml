@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/restaurant_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/restaurant_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RestaurantTitleTextStyle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                tools:text = "Lupe's East LA Kitchen" />
+
+            <TextView
+                android:id="@+id/restaurant_address_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RestaurantAddressTextStyle"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_title_text_view"
+                app:layout_constraintStart_toStartOf="@id/restaurant_title_text_view"
+                app:layout_constraintEnd_toEndOf="@id/restaurant_title_text_view"
+                app:layout_constraintHorizontal_bias="0.0"
+                tools:text = "166 W 4th Street"
+                />
+
+            <TextView
+                android:id="@+id/restaurant_cost_indicator_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                style="@style/RestaurantInfoTextStyle"
+                app:layout_constraintTop_toBottomOf="@id/restaurant_address_text_view"
+                app:layout_constraintStart_toStartOf="@id/restaurant_address_text_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="$$" />
+
+            <TextView
+                android:id="@+id/restaurant_cost_divider_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RestaurantInfoTextStyle"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@id/restaurant_cost_indicator_view"
+                app:layout_constraintStart_toEndOf="@id/restaurant_cost_indicator_view"
+                android:text=" | " />
+
+            <TextView
+                android:id="@+id/restaurant_phone_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RestaurantInfoTextStyle"
+                app:layout_constraintTop_toTopOf="@id/restaurant_cost_divider_view"
+                app:layout_constraintStart_toEndOf="@id/restaurant_cost_divider_view"
+                tools:text="XXX-XXX-XXXX" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

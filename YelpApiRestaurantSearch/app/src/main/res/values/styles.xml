@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="RestaurantTitleTextStyle">
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/purple_700</item>
+        <item name="maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RestaurantAddressTextStyle">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RestaurantInfoTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="RestaurantDetailInfoTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

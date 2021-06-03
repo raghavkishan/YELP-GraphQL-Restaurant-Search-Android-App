@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Burrito Places</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="api_key">xYh_wneIRRUphFKur-qWaczG-kjrT-gE7dvV-ViWUCs6yz6J2DGgYUowZp_AovaW6PD--vlUT9a1iHk62xjc2nNsaUD-68NZ7XdhWOVHQZ4BA5qORMX_tmr6V6mpYHYx</string>
+</resources>
